@@ -17,10 +17,10 @@ keywords: [digital, io, led, button, arduino, kikicode]
 :::
 
 
-Digital signals are either `0` or `1`, the Arduino Uno has 14 digital pins.
+Digital signals are either `0` or `1`, the Arduino Uno has a total of 14 digital pins.
 
-We'll cover how to blink an LED, and read if a button was pressed. 
-
+The first example demonstrates how to blink a LED. \
+The second example demonstrates how to read a button's state. 
 
 \noindent
 \begin{minipage}[t]{0.35\textwidth}
@@ -64,7 +64,8 @@ void loop() {
 }
 ```
 
-> Challenge:  How could we blink 3 LEDs one at a time? Imagine traffic lights running 2 seconds Green, 1 second Yellow and 2 seconds Red.
+> Challenge: Blink 3 LEDs one at a time. Imagine traffic lights running 2 seconds Green, 1 second Yellow, and 2 seconds Red. \
+> Each LED must have a resistor.
 
 \newpage
 
@@ -78,16 +79,22 @@ In this example, we print the value read on `Pin 4` to the Serial Monitor
 
 ```cpp
 void setup() {
-  // Configure Pin 4 as an Input pin
+  // Configure Pin 4 as an Input for button
   pinMode(4, INPUT);
 
-  // Configure serial communications
-  Serial.begin(9600);
+  // Configure Pin 8 as an Output for LED
+  pinMode(8, OUTPUT);
 }
 
 void loop() {
-  // Print out the button value in serial communication
-  Serial.println(digitalRead(4));
+  // If button is pressed
+  if (digitalRead(4)) {
+    // Turn on LED
+    digitalWrite(8, 1);
+  } else {
+    // Turn on LED
+    digitalWrite(8, 1);
+  }
 }
 ```
 
@@ -96,6 +103,6 @@ void loop() {
 
 
 > Challenge: Make a counter with a button. \
-> Each time the button is pressed, we add 1 to the count. \
+> Each time the button is pressed, add 1 to the count. \
 > Print the count in the serial monitor. \
 > Hint; Create a `count` variable
