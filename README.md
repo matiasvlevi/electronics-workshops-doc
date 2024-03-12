@@ -1,6 +1,6 @@
 # Arduino Workshops
 
-The documents are made with pandoc, built documents are available in `./bin`
+The documents are made with pandoc, built documents are available in `./docs`
 
 ### Build documents
 
