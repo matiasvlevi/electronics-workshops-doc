@@ -40,7 +40,7 @@ What You'll Need:
 \hfill
 \begin{minipage}[t]{0.55\textwidth}
 \vspace{0pt}
-\includegraphics[width=1\linewidth]{docs/assets/led_b_pin8.png}
+\includegraphics[width=1\linewidth]{src/assets/led_b_pin8.png}
 \end{minipage}
 
 \
@@ -72,7 +72,7 @@ void loop() {
 
 # Read the Button State
 
-![Pin 4 Button Circuit](docs/assets/button_b.png){ width=90% }
+![Pin 4 Button Circuit](src/assets/button_b.png){ width=90% }
 
 
 In this example, we print the value read on `Pin 4` to the Serial Monitor

@@ -28,17 +28,17 @@ A photoresistor changes its resistance according to light, used right, we can ge
 \hfill
 \begin{minipage}[t]{0.3\textwidth}
 \vspace{0pt}
-\includegraphics[width=0.85\linewidth]{docs/assets/photoresistor_s.png}
+\includegraphics[width=0.85\linewidth]{src/assets/photoresistor_s.png}
 \end{minipage}
 
 
-![Photoresistor voltage divider](docs/assets/photo_divider.png){ width=80% }
+![Photoresistor voltage divider](src/assets/photo_divider.png){ width=80% }
 
 
 ### Wiring
 
 
-![Photoresistor voltage divider on a breadboard](docs/assets/photoresistor_b.png){ width=65% }
+![Photoresistor voltage divider on a breadboard](src/assets/photoresistor_b.png){ width=65% }
 
 The circuit requires a `resistor` and a `photoresistor` arranged in series. 
 
@@ -82,6 +82,7 @@ light = analogRead(A0);
 
 
 
+
 ## Simple `analogRead` code
 
 Use the serial port to your advantage, you can print code variables in it to understand what is happening.
@@ -111,7 +112,7 @@ void loop() {
 
 # Control an Active Piezo Buzzer
 
-![Piezo Buzzer](docs/assets/piezo_b.png){ width=67% }
+![Piezo Buzzer](src/assets/piezo_b.png){ width=67% }
 
 This code sends an analog signal to the piezo buzzer, the analog value sent represents the buzzer note frequency (in a `0` to `255` range)
 

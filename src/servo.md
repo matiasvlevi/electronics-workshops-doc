@@ -25,7 +25,7 @@ They can be used in a wide range of applications, from moving robot arms to cont
 \hfill
 \begin{minipage}[t]{0.25\textwidth}
 \vspace{0pt}
-\includegraphics[width=0.88\linewidth]{docs/assets/servo_cartoon.png}
+\includegraphics[width=0.88\linewidth]{src/assets/servo_cartoon.png}
 \end{minipage}
 
 We'll cover how to control a servo motor with Arduino. 
@@ -48,7 +48,7 @@ Although the Arduino can provide 5V, it can't provide enough current for a motor
 
 This is why we use an *external 5V power source*. 
 
-![Servo Motor Circuit](docs/assets/sweep_servo.png){ width=70% }
+![Servo Motor Circuit](src/assets/sweep_servo.png){ width=70% }
 
 
 #### Servo Wires

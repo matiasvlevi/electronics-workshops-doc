@@ -2,8 +2,8 @@
 
 CSS = pandoc.css
 TEMPLATE = eisvogel
-SOURCE_DIR = ./docs
-OUTPUT_DIR = ./bin
+SOURCE_DIR = ./src
+OUTPUT_DIR = ./docs
 PDF_ENGINE = xelatex # Assuming you're using XeLaTeX, adjust as needed
 
 OPTIONS= "fontsize=12pt"
