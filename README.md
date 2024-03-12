@@ -1,12 +1,13 @@
+# Arduino Workshops
 
+The documents are made with pandoc, built documents are available in `./bin`
 
 ### Build documents
 
-`pandoc` required
+#### Requirements for build
 
-`texlive` required
-
-`eisvogel` template required
+* pandoc
+* texlive
 
 ```
 make
