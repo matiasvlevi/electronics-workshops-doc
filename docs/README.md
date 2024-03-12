@@ -1,6 +1,6 @@
-# Arduino Workshops
-
 *Ateliers Kikicode*
+
+---
 
 [Digital Input & Outputs](./digitalio.pdf)
 
